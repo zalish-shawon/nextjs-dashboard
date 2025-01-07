@@ -45,8 +45,6 @@ export default async function LatestInvoices({
                     </p>
                   </div>
                 </div>
-              
-
                 <p
                   className={`${inter.className} truncate text-sm font-medium md:text-base`}
                 >
