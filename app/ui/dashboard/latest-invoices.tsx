@@ -10,6 +10,12 @@ export default async function LatestInvoices({
 }) {
   return (
     <div className="flex w-full flex-col md:col-span-4">
+      <div>
+        <h4>
+          <ArrowPathIcon className="h-5 w-5 text-gray-400" />
+          <span className="ml-1">View All</span>
+        </h4>
+      </div>
       <h2 className={`${inter.className} mb-4 text-xl md:text-2xl`}>
         Latest Invoices
       </h2>
