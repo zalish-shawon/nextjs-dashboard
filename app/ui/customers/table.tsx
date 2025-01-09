@@ -21,6 +21,7 @@ export default async function CustomersTable({
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full align-middle">
             <div className="overflow-hidden rounded-md bg-gray-50 p-2 md:pt-0">
+              <div><h1 className='text-sm font-serif justify-center align-center'>Device invoices</h1></div>
               <div className="md:hidden">
                 {customers?.map((customer) => (
                   <div
@@ -62,25 +63,6 @@ export default async function CustomersTable({
                   </div>
                 ))}
               </div>
-
-              {/* data table for customers start */}
-              <div>
-                
-                <table>
-                  <td>Id</td>
-                  <td>Name</td>
-                  <td>Email</td>
-                  <td>Phone</td>
-                  <tr>1</tr>
-                  <tr>Mahmud</tr>
-                  <tr>admin@gmail.com</tr>
-                  <tr>544666664444</tr>
-                  
-                </table>
-              </div>
-
-                {/* data table customer end */}
-
               <table className="hidden min-w-full rounded-md text-gray-900 md:table">
                 <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
                   <tr>
