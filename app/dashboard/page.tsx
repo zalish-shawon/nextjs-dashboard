@@ -17,7 +17,8 @@ export default async function Page() {
     totalPaidInvoices,
     totalPendingInvoices,
   } = await fetchCardData();
- 
+
+  
   return (
     <main>
       <h1 className={`${inter.className} mb-4 text-xl md:text-2xl`}>
