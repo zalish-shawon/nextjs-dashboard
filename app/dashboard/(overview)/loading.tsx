@@ -2,10 +2,7 @@ import DashboardSkeleton from "../../ui/skeletons";
 
 const Skeleton = () => {
     return (
-        
-        
        <DashboardSkeleton/>
-           
     );
 };
 
