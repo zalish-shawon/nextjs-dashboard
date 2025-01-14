@@ -18,7 +18,9 @@ const links = [
     href: '/dashboard/invoices',
     icon: DocumentDuplicateIcon,
   },
-  { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Customers', 
+    href: '/dashboard/customers', 
+    icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {
@@ -43,7 +45,7 @@ export default function NavLinks() {
 
             // Additional styles for links when they are active or hovered over.
           >
-            <LinkIcon className="w-6" />
+            <LinkIcon className="w-6 " />
             <p className="hidden md:block">{link.name}</p>
           </Link>
           
