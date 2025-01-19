@@ -12,6 +12,8 @@ import { Button } from '@/app/ui/button';
 
 export default function EditInvoiceForm({invoice, customers,}: {invoice: InvoiceForm; customers: CustomerField[];
 }) {
+
+
   return (
     <form>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
