@@ -5,7 +5,6 @@ import { usePathname, useSearchParams } from 'next/navigation';
 
 export default function Search({ placeholder }: { placeholder: string }) {
 
-  
 
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -18,7 +17,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     if (term) {
       params.set('query', term); 
     } else {
-      params.delete('query'); 
+      params.delete('query');
     }
 
     // Use the window object to navigate (client-side navigation)
