@@ -9,6 +9,16 @@ export default function Search({ placeholder }: { placeholder: string }) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
 
+  // demo purpose only
+
+  const handleSearch2 = () => {
+
+    const params = new URLSearchParams(searchParams);
+    console.log(params);
+  }
+
+  handleSearch2() // demo purposes only...
+
   const handleSearch = (term: string) => {
 
     const params = new URLSearchParams(searchParams.toString());
