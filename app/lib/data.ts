@@ -119,6 +119,25 @@ export async function fetchFilteredInvoices(
   }
 }
 
+
+export async function getUser(email: string) {
+  try {
+    // Query the database for the user
+    const result = await sql`
+      SELECT * 
+      FROM users
+      WHERE email = ${email}
+      LIMIT 1;
+    `;
+
+    // Return the user if found, or null if not
+    return result.rows.length > 0 ? result.rows[0] : null;
+  } catch (error) {
+    console.error('Error fetching user:', error);
+    return null;
+  }
+}
+
 export async function fetchInvoicesPages(query: string) {
   try {
     const count = await sql`SELECT COUNT(*)
