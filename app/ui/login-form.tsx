@@ -1,6 +1,6 @@
 'use client';
  
-import { inter, lusitana } from '@/app/ui/fonts';
+import { inter, } from '@/app/ui/fonts';
 import {
   AtSymbolIcon,
   KeyIcon,
@@ -13,6 +13,8 @@ import { authenticate } from '@/app/lib/actions';
 import { useSearchParams } from 'next/navigation';
  
 export default function LoginForm() {
+
+  
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get('callbackUrl') || '/dashboard';
   const [errorMessage, formAction, isPending] = useActionState(
